@@ -2,8 +2,8 @@ package com.bridgelabz;
 
 public class UserRegistrationMain {
     /*
-    ~Creating main method.
-     */
+     ~Creating main method.
+      */
     public static void main(String[] args) {
     /*
     ~Welcome message of User Registration
