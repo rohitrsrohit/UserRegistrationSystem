@@ -1,7 +1,16 @@
 package com.bridgelabz;
 
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
 public class UserRegistration {
-    public static void main(String[] args) {
-        System.out.println("Welcome To User Registration Page");
+    /*
+     1) First Name start with Capital letter and it has minimum 3 charachter
+     */
+    public static void validFirstName() {
+        System.out.print("Enter First Name : ");
+        Scanner sc = new Scanner(System.in);
+        String FirstName = sc.next();
+        System.out.println(Pattern.matches("[A-Z][a-z]{2,}", FirstName));
     }
 }
