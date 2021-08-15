@@ -23,10 +23,10 @@ public class UserRegistration {
         System.out.println(Pattern.matches("[A-Z][a-z]{2,}", LastName));
     }
     /*
-    3) Email has 3 mandatory parts (abc, com & co) and 2 optional (def & in) with precise @ and . positions
+    3) For printing Email Pattern
      * E.g. abc.def@com.co.in
      */
-    public static void validEmail() {
+    public static void validEmailId() {
         System.out.print("Enter Email : ");
         Scanner sc = new Scanner(System.in);
         String Email = sc.next();
@@ -45,6 +45,7 @@ public class UserRegistration {
     5)Password Rule 1:- Password contains minimum 8 characters
      */
     public static void validPasswordRule1() {
+        System.out.println("Password Should have minimum 8 charachters");
         System.out.print("Enter Password : ");
         Scanner sc = new Scanner(System.in);
         String Password = sc.next();
@@ -64,7 +65,7 @@ public class UserRegistration {
     7)Password Rule 3:- Password Should have at least 1 Numeric number
      */
     public static void validPasswordRule3() {
-        System.out.println("Rule 3 Should have at least 1 Numeric Number");
+        System.out.println("Paaword Should have at least 1 Numeric Number");
         System.out.print("Enter Password Rule 3  : ");
         Scanner sc = new Scanner(System.in);
         String Password = sc.next();
@@ -79,5 +80,14 @@ public class UserRegistration {
         Scanner sc = new Scanner(System.in);
         String password = sc.next();
         System.out.println(Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&-+=()]).{8,}$", password));
+    }
+    /*
+    9)Check whether the Email Sample is true or not.
+     */
+    public static void validEmail(String Email) {
+        System.out.println("Checking the Email Samples");
+        final String EMAIL_PATTERN = "^[A-Za-z0-9+-_.]+@[A-Za-z0-9+_.]+$";
+        boolean result = Email.matches(EMAIL_PATTERN);
+        System.out.println(result);
     }
 }
