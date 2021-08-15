@@ -50,4 +50,14 @@ public class UserRegistration {
         String Password = sc.next();
         System.out.println(Pattern.matches("^(?=.*[a-z]).{8,}$", Password));
     }
+    /*
+    6)Password Rule 2:- Password Should have at least 1 Upper Case
+     */
+    public static void validPasswordRule2() {
+        System.out.println("Password Should have at least 1 Upper Case");
+        System.out.print("Enter Password Rule 2  : ");
+        Scanner sc = new Scanner(System.in);
+        String Password = sc.next();
+        System.out.println(Pattern.matches("^(?=.*[a-z])(?=.*[A-Z]).{8,}$", Password));
+    }
 }
