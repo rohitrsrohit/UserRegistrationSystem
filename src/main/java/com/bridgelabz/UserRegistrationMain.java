@@ -13,5 +13,6 @@ public class UserRegistrationMain {
         userRegistration.validMobileNumber();
         userRegistration.validPasswordRule1();
         userRegistration.validPasswordRule2();
+        userRegistration.validPasswordRule3();
     }
 }
