@@ -9,5 +9,6 @@ public class UserRegistrationMain {
         UserRegistration userRegistration = new UserRegistration();
         userRegistration.validFirstName();
         userRegistration.validLastName();
+        userRegistration.validEmail();
     }
 }
